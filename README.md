@@ -1,0 +1,1 @@
+## Sky to be Media est l'agence média du groupe Play To Sky, spécialisée dans le podcast, l'interview et le journalisme digital. À ce stade du projet, le site est en développement et sera lancé en mode "Coming Soon" le temps que le contenu et l'identité visuelle soient finalisés.
