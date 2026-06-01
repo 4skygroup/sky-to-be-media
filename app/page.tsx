@@ -12,11 +12,10 @@ export default function Home() {
         <Image
           src="/Sky-to-be-media-logo-noir.png"
           alt="Sky To Be Media Background Logo"
-          width={2500}
-          height={2500}
+          fill
           priority
-          quality={100}
-          className="w-auto h-auto max-w-[70vw] sm:max-w-[80vw] md:max-w-[90vw] lg:max-w-[110vw] object-contain transform -translate-y-24"
+          sizes="(max-width: 640px) 70vw, (max-width: 768px) 80vw, (max-width: 1024px) 90vw, 110vw"
+          className="w-auto h-auto object-contain transform -translate-y-24"
         />
       </div>
 
@@ -39,7 +38,7 @@ export default function Home() {
             <span className="transition-transform duration-300 group-hover:-translate-x-1">
               ←
             </span>
-            Back to Play To Sky Portal
+            Back to Play To Sky
           </Link>
         </div>
       </div>
