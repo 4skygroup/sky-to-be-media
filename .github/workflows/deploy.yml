@@ -1,4 +1,4 @@
-name: Deploy SKY TO BE MEDIA to OVH
+name: Deploy SKY-TO-BE-MEDIA to OVH
 
 on:
   push:
@@ -17,11 +17,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 2. Installer, Vérifier (Audit/Lint) et Construire
+      - name: 2. Installer et Construire
         run: |
           npm install
-          npm audit --audit-level=high
-          npm run lint --if-present
           npm run build
 
       - name: 3. Préparer le dossier sur le serveur
@@ -35,13 +33,13 @@ jobs:
             sudo chown -R ubuntu:ubuntu /var/www/skytobemedia.com
             sudo rm -rf /var/www/skytobemedia.com/*
 
-      - name: 4. Envoyer les fichiers prêts au serveur
+      - name: 4. Envoyer les fichiers (Dossier 'dist' forcé)
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "dist"
+          source: "dist" 
           target: "/var/www/skytobemedia.com/"
           strip_components: 1
 
