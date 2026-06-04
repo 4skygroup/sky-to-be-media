@@ -1,7 +1,11 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+interface Props {
+  section: string;
+}
+
+export default function ComingSoonPage({ section }: Props) {
   return (
     <div className="flex-1 flex flex-col items-center justify-center relative px-6 overflow-hidden">
 
@@ -11,7 +15,7 @@ export default function Home() {
         style={{ background: "radial-gradient(ellipse 75% 60% at 50% 45%, rgba(255,255,255,0.04) 0%, transparent 70%)" }}
       />
 
-      {/* Corner frames - draw in after content */}
+      {/* Corner frames */}
       <div className="absolute top-5 left-5 md:top-8 md:left-8 border-l border-t border-white/10 pointer-events-none z-0 corner-frame" style={{ "--reveal-delay": "700ms" } as React.CSSProperties} />
       <div className="absolute top-5 right-5 md:top-8 md:right-8 border-r border-t border-white/10 pointer-events-none z-0 corner-frame" style={{ "--reveal-delay": "750ms" } as React.CSSProperties} />
       <div className="absolute bottom-5 left-5 md:bottom-8 md:left-8 border-l border-b border-white/10 pointer-events-none z-0 corner-frame" style={{ "--reveal-delay": "800ms" } as React.CSSProperties} />
@@ -20,11 +24,14 @@ export default function Home() {
       {/* Main content */}
       <div className="z-10 flex flex-col items-center text-center w-full max-w-6xl mx-auto">
 
-        {/* Label */}
+        {/* Section label */}
         <div
           className="reveal flex items-center gap-3 md:gap-4 mb-8 md:mb-10"
           style={{ "--reveal-delay": "0ms" } as React.CSSProperties}
         >
+          <p className="text-[9px] sm:text-[10px] tracking-[0.4em] sm:tracking-[0.5em] text-white/30 uppercase">
+            {section}
+          </p>
         </div>
 
         {/* Hero typography */}
@@ -34,11 +41,11 @@ export default function Home() {
         >
           <h1
             className="font-bold uppercase leading-[0.88] tracking-[-0.02em]"
-            style={{ fontSize: "clamp(3.5rem, 10vw, 6rem)" }}
+            style={{ fontSize: "clamp(3.5rem, 15vw, 11rem)" }}
           >
             <span className="block text-white">Coming</span>
             <span
-              className="block text-transparent outline-breathe z-index-99"
+              className="block text-transparent outline-breathe"
               style={{ WebkitTextStroke: "1.5px rgba(255,255,255,0.25)" }}
             >
               Soon
@@ -46,23 +53,9 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* Logo */}
-        <div
-          className="reveal mb-8 md:mb-8"
-          style={{ "--reveal-delay": "360ms" } as React.CSSProperties}
-        >
-          <img
-            src="/Sky-to-be-media-logo-noir.png"
-            alt="Sky To Be Media"
-            // width={320}
-            height={80}
-            className="object-contain opacity-60 w-28 sm:w-32 md:w-40 h-auto logo-float"
-          />
-        </div>
-
         {/* Tagline */}
         <p
-          className="reveal text-white/35 uppercase tracking-[0.1em] sm:tracking-[0.1em] text-[9px] sm:text-[10px] md:text-xs"
+          className="reveal text-white/35 uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[9px] sm:text-[10px] md:text-xs"
           style={{ "--reveal-delay": "480ms" } as React.CSSProperties}
         >
           Podcasts&nbsp;&nbsp;·&nbsp;&nbsp;Interviews&nbsp;&nbsp;·&nbsp;&nbsp;Journalism
@@ -75,7 +68,7 @@ export default function Home() {
         >
           <Link
             href="https://playtosky.com/"
-            className="inline-flex items-center px-8 py-3 border border-white/25 text-[16px] sm:text-[16px] tracking-[0.1em] text-white/50 hover:bg-white hover:text-black hover:border-white transition-all duration-500 cursor-pointer"
+            className="inline-flex items-center px-8 py-3 border border-white/25 text-[9px] sm:text-[10px] tracking-[0.35em] uppercase text-white/50 hover:bg-white hover:text-black hover:border-white transition-all duration-500 cursor-pointer"
           >
             Back to Play To Sky
           </Link>
