@@ -37,8 +37,7 @@ const contactSchema = {
 export default function Contact() {
 
     return (
-        <div className="w-full min-h-[calc(90vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-3 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
-            <script
+        <div className="w-full min-h-[calc(90vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-12 md:py-20 px-4 md:px-8 flex flex-col md:justify-center border-t border-b border-white overflow-y-auto">            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
             />
