@@ -60,7 +60,7 @@ export default function Contact() {
                     {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
                     <div className="md:col-span-5 flex justify-center items-center p-4">
                         <Image
-                            src="https://skytobemedia.com/Sky-to-be-media-logo-noir.png"
+                            src="/Sky-to-be-media-logo-noir.png"
                             alt="Logo Sky To Be Media"
                             width={350}
                             height={150}
