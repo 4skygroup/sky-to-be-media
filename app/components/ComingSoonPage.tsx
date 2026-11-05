@@ -29,7 +29,7 @@ export default function ComingSoonPage({ section }: Props) {
           className="reveal flex items-center gap-3 md:gap-4 mb-8 md:mb-10"
           style={{ "--reveal-delay": "0ms" } as React.CSSProperties}
         >
-          <p className="text-[9px] sm:text-[10px] tracking-[0.4em] sm:tracking-[0.5em] text-white/30 uppercase">
+          <p className="text-xs tracking-[0.4em] sm:tracking-[0.5em] text-white/30 uppercase">
             {section}
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function ComingSoonPage({ section }: Props) {
 
         {/* Tagline */}
         <p
-          className="reveal text-white/35 uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[9px] sm:text-[10px] md:text-xs"
+          className="reveal text-white/35 uppercase tracking-[0.3em] sm:tracking-[0.35em] text-xs md:text-xs"
           style={{ "--reveal-delay": "480ms" } as React.CSSProperties}
         >
           Podcasts&nbsp;&nbsp;·&nbsp;&nbsp;Interviews&nbsp;&nbsp;·&nbsp;&nbsp;Journalism
@@ -68,7 +68,7 @@ export default function ComingSoonPage({ section }: Props) {
         >
           <Link
             href="https://playtosky.com/"
-            className="inline-flex items-center px-8 py-3 border border-white/25 text-[9px] sm:text-[10px] tracking-[0.35em] uppercase text-white/50 hover:bg-white hover:text-black hover:border-white transition-all duration-500 cursor-pointer"
+            className="inline-flex items-center px-8 py-3 border border-white/25 text-xs tracking-[0.35em] uppercase text-white/50 hover:bg-white hover:text-black hover:border-white transition-all duration-500 cursor-pointer"
           >
             Back to Play To Sky
           </Link>

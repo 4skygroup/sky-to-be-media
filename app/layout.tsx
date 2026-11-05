@@ -21,10 +21,10 @@ const glacialIndifference = localFont({
 
 export const metadata: Metadata = {
   title: "Sky To Be Media | Coming Soon",
-  description: "Agence media dediee aux podcasts, interviews et journalisme.",
+  description: "Agence média dédiée aux podcasts, aux interviews et au journalisme.",
   openGraph: {
     title: "Sky To Be Media | Coming Soon",
-    description: "Agence media dediee aux podcasts, interviews et journalisme.",
+    description: "Agence média dédiée aux podcasts, aux interviews et au journalisme.",
     siteName: "Sky To Be Media",
     locale: "fr_FR",
     type: "website",
