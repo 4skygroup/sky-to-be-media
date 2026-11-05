@@ -82,7 +82,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="absolute bottom-12 text-white/30 text-[10px] tracking-widest uppercase">
+        <div className="absolute bottom-12 text-white/30 text-xs tracking-widest uppercase">
           A Play To Sky Group Entity
         </div>
       </div>

@@ -62,7 +62,7 @@ export default function Home() {
 
         {/* Tagline */}
         <p
-          className="reveal text-white/35 uppercase tracking-[0.1em] sm:tracking-[0.1em] text-[9px] sm:text-[10px] md:text-xs"
+          className="reveal text-white/35 uppercase tracking-[0.1em] sm:tracking-[0.1em] text-xs md:text-xs"
           style={{ "--reveal-delay": "480ms" } as React.CSSProperties}
         >
           Podcasts&nbsp;&nbsp;·&nbsp;&nbsp;Interviews&nbsp;&nbsp;·&nbsp;&nbsp;Journalism
